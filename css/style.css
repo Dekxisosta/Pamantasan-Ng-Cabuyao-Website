@@ -71,7 +71,7 @@ footer {
 }
 @font-face {
 font-family: OldEnglishFive;
-src: url(/assets/fonts/OldEnglishFive.ttf);
+src: url(assets/fonts/OldEnglishFive.ttf);
 }
 .old-english-font {
 font-family: OldEnglishFive;
