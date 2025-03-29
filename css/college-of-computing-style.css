@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body { 
+    font-family: 'Merriweather', serif;
+    background-color: #f8f9fa;
+}
+
+/* Header Image */
+.header img {
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+/* Section Headings */
+h2 {
+    font-weight: 700;
+    color: #00563F; /* Dark Green */
+}
+
+/* Overview Section */
+.overview p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Program List */
+.list-group-item {
+    border: none;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.list-group-item:hover {
+    background-color: #e9f5e9;
+}
+
+/* Admission Requirements */
+.list-of-requirement ul {
+    list-style-type: square;
+    font-size: 1.1rem;
+}
+
+/* Footer */
+.footer {
+    background-color: #004225; /* Dark Green */
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Overview Image */
+.overview-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+/* Button */
+.btn-back {
+    margin-bottom: 20px;
+}
+.apply-btn {
+    background-color: #03854d;
+    color: white;
+    width: 40%;
+}
+a{
+  text-decoration: none;
+}
+.apply{
+  color: white;
+}
+.apply-btn:hover {
+    background-color: rgb(7, 53, 7);
+}

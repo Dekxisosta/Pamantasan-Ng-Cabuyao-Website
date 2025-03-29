@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HISTORY | University Of Cabuyao</title>
+    <!-- LINK BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--LINK MAIN CSS FILE-->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+     <!--NAVIGATION BAR SECTION-->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <!--NAVIGATION BAR UNIVERSITY OF CABUYAO BANNER-->
+            <!--When clicked, it goes back to top-->
+            <a class="navbar-brand" href="#">
+                <img src="/assets/images/pnc-header-2-white.png" alt="PNC Pamantasan ng Cabuyao">
+            </a>
+            <!--NAVIGATION BAR TOGGLER - SHOWS WHEN SCREEN SIZE IS PORTRAIT-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--NAVIGATION BAR PARTS-->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <!--NAVIGATION BAR HOME PART-->
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/index.html">&nbsp&nbsp Home</a>
+                    </li>
+                    <!--NAVIGATION BAR ABOUT PART-->
+                    <li class="nav-item dropdown">
+                        <!--Dropdown Toggle for about us-->
+                        <a class="nav-link dropdown-toggle nav-item-text" href="/category/programs.html" id="programsDropdown" role="button"
+                            data-bs-toggle="dropdown">
+                            About Us
+                        </a>
+                        <!--Dropdown for about page options enabled-->
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/category/about/hymn.html">Hymn</a></li>
+                            <li><a class="dropdown-item" href="/category/about/history.html">History</a></li>
+                        </ul>
+                    </li>
+                    <!--NAVIGATION BAR PROGRAMS PART-->
+                    <li class="nav-item dropdown">
+                        <!--Dropdown Toggle for Programs-->
+                        <a class="nav-link dropdown-toggle" href="/category/programs.html" id="programsDropdown" role="button"
+                            data-bs-toggle="dropdown">
+                            Programs
+                        </a>
+                        <!--Dropdown Menu for college departments-->
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/category/programs.html">All Programs</a></li>
+                            <li><a class="dropdown-item" href="/category/programs/college-of-computing.html">College of Computing</a></li>
+                        </ul>
+                    </li>
+                    <!--NAVIGATION BAR ADMISSIONS PART-->
+                    <li class="nav-item dropdown">
+                        <!--Dropdown Toggle for Programs-->
+                        <a class="nav-link dropdown-toggle" href="/category/programs.html" id="programsDropdown" role="button"
+                            data-bs-toggle="dropdown">
+                            Admissions
+                        </a>
+                        <!--Dropdown Menu for college departments-->
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/category/admissions.html">All about admissions</a></li>
+                            <li><a class="dropdown-item" href="/category/admissions/admission-form.html">Admission Form</a></li>
+                            <li><a class="dropdown-item" href="/category/admissions/requirements.html">Requirements</a></li>
+                        </ul>
+                    </li>
+                    <!--NAVIGATION BAR RESEARCH PART-->
+                    <li class="nav-item">
+                        <!--Link disabled-->
+                        <a class="nav-link disabled">Research</a>
+                    </li>
+                    <!--NAVIGATION BAR CONTACT PART-->
+                    <li class="nav-item">
+                        <!--Link disabled-->
+                        <a class="nav-link disabled">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--HERO SECTION - VISUALLY ENGAGING AREA OF THE WEBPAGE-->
+    <section class="hero-section text-center">
+        <div class="container">
+            <!--Displays PnC Logo-->
+            <img src="/assets/images/pnc Logo.png" class="hero-section-logo" alt="">
+            <!--Displays university name in Old English Five Font with stroke -->
+            <h1 id="pnc-header" class="display-3 old-english-font" style=" -webkit-text-stroke: 1px rgb(255, 255, 255);">
+                History of University of Cabuyao
+            </h1>
+        </div>
+    </section>
+    <!-- INTRODUCTION TO HISTORY OF CABUYAO -->
+    <div class="history-container" style="text-align: center; margin: 10px;">
+        <div class="intro">
+            <img src="../../assets/images/oldPnc1.png" alt="old pnc" class="img-fluid">
+    
+            <div class="intro-text">
+                <h2 class="his"> A Brief History</h2>
+                <p>
+                    "The Pamantasan ng Cabuyao (PnC; also known as the University of Cabuyao) is a university in the city of Cabuyao, province of Laguna, Philippines. It was founded by then Mayor Proceso “Etok” D. Aguillo, through the enactment of Municipal Ordinance 2003-059 approved on April 16, 2003."
+                </p>
+                <p>
+                    "Before the establishment of the Pamantasan ng Cabuyao, there was a satellite campus of the Laguna State Polytechnic University (LSPU) at the Cabuyao National High School. The LSPU was operating through a memorandum of agreement between the LSPU president and Cabuyao municipal mayor, which commenced in 1993 and ended on March 31, 2003."
+                </p>
+            </div>
+        </div>
+        <!-- BUTTON TO DISPLAY MODAL -->
+        <button class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#historyModal">Read More..</button>
+        <!-- MODAL WHICH DISPLAYS HISTORY WHEN BUTTON IS CLICKED-->
+        <div class="modal fade" id="historyModal" tabindex="-1" aria-labelledby="historyModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="historyModalLabel">History of Pamantasan ng Cabuyao</h5>
+                        <!--eto yung x button-->
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <!--laman ng modal-->
+                    <div class="modal-body">
+                        <img src="../../assets/images/oldPnc2.png" alt="old pnc" class="img-fluid mb-3">
+                        <p>In late 2002, there was a strong protest against the leadership of the LSPC president from faculty members and students of LSPC. The protest was headed by Charlemagne G. Laviña and supported by Rosalia B. Pre, George Barundia, Christian Hernandez, Melissa Dimaculangan, and one non-teaching staff, along with some students from LSPC - Cabuyao Campus.</p>
+                        <p>The protest was found by the Sangguniang Bayan of Cabuyao to be true and based on facts, with support from almost all students, most of whom were Cabuyeños. It resulted in the issuance of the Notice of Termination to the memorandum of agreement. This left the administration of the mayor with no option but to establish Cabuyao Community College.</p>
+                        <p>Anticipating the closure of LSPC-Cabuyao, faculty members headed by Charlemagne Lavina and Frank Parao assisted the office of the mayor. They suggested that the Pamantasan ng Lungsod ng Maynila (PLM) would be an ideal model for the local college. Dr. Benjamin Tayabas, then PLM president, assisted the Cabuyao municipality and personally helped in the effort to set up a university.</p>
+                        <p>Dr. Tayabas suggested that the name "Pamantasan ng Cabuyao" be adopted. On April 15, 2003, the Sangguniang Bayan enacted Municipal Ordinance No. 2003-059, and the ordinance was approved the following day by Mayor Proceso “Etok” D. Aguillo.</p>
+                        <p>Pamantasan ng Cabuyao was inaugurated on July 31, 2003, the birthday of its founding mayor, and was personally inaugurated by President Gloria Macapagal Arroyo on June 19, 2003, during the 107th birthday of Dr. Jose Rizal.</p>
+                        <p>During the term of Mayor Isidro L. Hemedes, Jr., and with the able assistance of Atty. Rommel Gecolea, who succeeded him after winning the 2016 elections, significant educational reforms were introduced. New and improved systems were implemented, and old practices were turned into sound and solid written policies and procedures.</p>
+                    </div>
+                    <!--close button sa baba-->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--CHAT BUBBLE OF CHAT BOT IN VIEWPORT-->
+    <div id="chat-bubble-container"  style="position: fixed; right: 0;">
+        <button disabled type="button" style="background-color: #0fa13100; border: 0;" data-toggle="tooltip" data-placement="top" title="This feature is current unavailable">
+            <img src="/assets/images/pixel-speech-bubble.png" alt="" style="width: 300px;" >
+        </button>
+    </div>
+    <!--CHAT BOT IN VIEWPORT-->
+    <div id="chatbot-container"  style="position: fixed; right: 0;">
+        <button disabled type="button" style="background-color: #0fa13100; border: 0;" data-toggle="tooltip" data-placement="top" title="This feature is current unavailable">
+            <img src="/assets/images/PncChatBot.png" alt="" style="width: 150px;" >
+        </button>
+    </div>
+    <!--STORE FIXED ICON IN VIEWPORT-->
+    <div style="position: fixed; right: 0; width: px; bottom: 80%;">
+        <button disabled type="button" style="background-color: #0fa13100; border: 0;" data-toggle="tooltip" data-placement="top" title="This feature is current unavailable">
+            <h4 class="old-english-font" style="background-color: #0fa131; padding: 10px; border: 5px rgb(202, 230, 103) ; border-radius: 10px 50px; color: white;">Store</h4>
+        </button>
+    </div>
+    <footer class="text-start">
+        <div class="container">
+            <div class="row">
+                <!--QUICK LINKS PART-->
+                <div class="col-md-4 mb-2 mb-md-0">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="/index.html" class="text-white" style="text-decoration: none;">Home</a></li>
+                        <li><a class="text-white" style="text-decoration: none;">About Us</a></li>
+                        <li><a href="/category/about/hymn.html" class="text-white" style="text-decoration: none;">&nbsp • Hymn</a></li>
+                        <li><a href="#" class="text-white" style="text-decoration: none;">&nbsp • History</a></li>
+                        <li><a href="/category/programs.html" class="text-white" style="text-decoration: none;">Programs</a></li>
+                        <li><a href="/category/programs/college-of-computing.html" class="text-white" style="text-decoration: none;">&nbsp • College Of Computing</a></li>
+                        <li><a href="/category/admissions.html" class="text-white" style="text-decoration: none;">Admissions</a></li>
+                        <li><a href="/category/admissions/admission-form.html" class="text-white" style="text-decoration: none;">&nbsp • Admission Form</a></li>
+                        <li><a href="/category/admissions/requirements.html" class="text-white" style="text-decoration: none;">&nbsp • Requirements</a></li>
+                        
+                    </ul>
+                </div>
+                <!--CONTACT DETAILS PART-->
+                <div class="col-md-4 mb-2 mb-md-0">
+                    <h5>Contact Us</h5>
+                    <p>Banay-Banay, Cabuyao, Laguna</p>
+                    <p>(000) 123-4567</p>
+                    <p> info@pnc.edu.ph</p>
+                </div>
+                <!--APPLICATION FORM PART-->
+                <div class="col-md-4 mb-2 mb-md-0">
+                    <h5>Want to be a PnCian?</h5>
+                    <p>Fill out our application form!</p>
+                    <button style="font-weight: bold; background-color: yellow; padding: 10px; border-radius: 10px; color: black;">APPLY NOW!</button>
+                </div>
+            </div>
+            <hr class="my-4 bg-white">
+            <p class="mb-0 text-center"> 2024-2025 Pamantasan ng Cabuyao.</p>
+        </div>
+    </footer>
+    <!--BOOTSTRAP JS FOR ANIMATIONS AND FUNCTIONALITY-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+</html>

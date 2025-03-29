@@ -1,0 +1,92 @@
+body {
+    background: linear-gradient(135deg, #4CAF50, #e6f0f8); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-backdrop-filter: blur(4px); 
+    backdrop-filter: blur(4px);
+    min-height: 100vh;
+}
+.btn-close {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+h1.text-center {
+    background-color: #28a745;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+}
+h1.text-center img {
+    height: 90px;
+    width: 90px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+ul {
+    background-color: rgb(167, 252, 252);
+    border: 1px solid rgb(133, 132, 132);
+    border-radius: 10px;
+}
+.form-label {
+    font-weight: 500;
+}
+.form-control {
+    width: 100%;
+}
+#firstName, #lastName {
+    width: 415px;
+}
+#middleName, #suffixName {
+    width: 195px;
+}
+#citizenship, #course {
+    width: 415px;
+}
+#yearLevel, #semester {
+    width: 195px;
+}
+.btn-success {
+    width: 1300px;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+}
+.btn-success:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #28a745;
+}
+.custom-modal .modal-content {
+    background: rgba(255, 255, 255, 0.9); 
+    border-radius: 15px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3); 
+    border: none; 
+}
+.custom-modal .modal-header {
+    background-color: #28a745; 
+    color: #fff; 
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.custom-modal .modal-footer {
+    border-top: none; 
+    display: flex;
+    justify-content: space-between;
+}
+.custom-modal .btn-primary {
+    background-color: #4CAF50;
+    border: none;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+.custom-modal .btn-primary:hover {
+    background-color: #45a049;
+    box-shadow: 0 0 12px #4CAF50;
+}
+.custom-modal .btn-secondary {
+    background-color: #6c757d;
+    border: none;
+}

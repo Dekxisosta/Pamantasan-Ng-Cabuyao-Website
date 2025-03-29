@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ADMISSIONS | College Admissions</title>
+    <!-- LINK BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--LINK MAIN CSS FILE-->
+    <link rel="stylesheet" href="/css/style.css">
+    <!--LINK CURRENT FILE SPECIFIC CSS FILE--> 
+    <link rel="stylesheet" href="/css/admissions-style.css">
+    <style>
+    body {
+    font-family: sans-serif;
+    background: linear-gradient(to bottom, #2E8B57, #9ACD32);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    </style>
+</head>
+<body>
+    <!--NAVIGATION BAR SECTION-->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <!--NAVIGATION BAR UNIVERSITY OF CABUYAO BANNER-->
+            <!--When clicked, it goes back to top-->
+            <a class="navbar-brand" href="#">
+                <img src="/assets/images/pnc-header-2-white.png" alt="PNC Pamantasan ng Cabuyao">
+            </a>
+            <!--NAVIGATION BAR TOGGLER - SHOWS WHEN SCREEN SIZE IS PORTRAIT-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--NAVIGATION BAR PARTS-->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <!--NAVIGATION BAR HOME PART-->
+                    <li class="nav-item">
+                        <a class="nav-link active nav-item-text" href="/index.html">&nbsp&nbsp Home</a>
+                    </li>
+                    <!--NAVIGATION BAR ABOUT PART-->
+                    <li class="nav-item dropdown">
+                        <!--Dropdown Toggle for about us-->
+                        <a class="nav-link dropdown-toggle" id="programsDropdown" role="button"
+                            data-bs-toggle="dropdown">
+                            About Us
+                        </a>
+                        <!--Dropdown for about page options enabled-->
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="about/hymn.html">Hymn</a></li>
+                            <li><a class="dropdown-item" href="about/history.html">History</a></li>
+                        </ul>
+                    </li>
+                    <!--NAVIGATION BAR PROGRAMS PART-->
+                    <li class="nav-item dropdown">
+                        <!--Dropdown Toggle for Programs-->
+                        <a class="nav-link dropdown-toggle" href="programs.html" id="programsDropdown" role="button"
+                            data-bs-toggle="dropdown">
+                            Programs
+                        </a>
+                        <!--Dropdown Menu for college departments-->
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="programs.html">All Programs</a></li>
+                            <li><a class="dropdown-item" href="programs/college-of-computing.html">College of Computing</a></li>
+                        </ul>
+                    </li>
+                    <!--NAVIGATION BAR ADMISSIONS PART-->
+                    <li class="nav-item dropdown">
+                        <!--Dropdown Toggle for Programs-->
+                        <a class="nav-link dropdown-toggle" id="programsDropdown" role="button"
+                            data-bs-toggle="dropdown">
+                            Admissions
+                        </a>
+                        <!--Dropdown Menu for college departments-->
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">All about admissions</a></li>
+                            <li><a class="dropdown-item" href="admissions/admission-form.html">Admission Form</a></li>
+                            <li><a class="dropdown-item" href="admissions/requirements.html">Requirements</a></li>
+                        </ul>
+                    </li>
+                    <!--NAVIGATION BAR RESEARCH PART-->
+                    <li class="nav-item">
+                        <!--Link disabled-->
+                        <a class="nav-link disabled">Research</a>
+                    </li>
+                    <!--NAVIGATION BAR CONTACT PART-->
+                    <li class="nav-item">
+                        <!--Link disabled-->
+                        <a class="nav-link disabled">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--HERO SECTION - VISUALLY ENGAGING AREA OF THE WEBPAGE-->
+    <section class="hero-section text-center">
+        <div class="container">
+            <!--Displays PnC Logo-->
+            <img src="/assets/images/pnc Logo.png" class="hero-section-logo" alt="">
+            <!--Displays university name in Old English Five Font with stroke -->
+            <h1 id="pnc-header" class="display-3 old-english-font" style=" -webkit-text-stroke: 1px rgb(255, 255, 255);">
+                About Admissions
+            </h1>
+        </div>
+    </section>
+    <strong>
+  <section class="requirements">
+    <h2 style="color: white;"><strong>Requirements</strong></h2>
+    <p><b><i>The following requirements must be submitted to the Registrar's Office before admission to any academic program:</i></b></p>
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+           <strong>Senior High School</strong>
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p><strong>Grade 11</strong></p>
+            <ul>
+                <li>Original Form 138/SF9-JHS (Learner’s Progress Report Card)</li>
+                <li>Original Form 137/SF10-JHS (Learner’s Permanent Academic Record)</li>
+                <li>PSA-issued Birth Certificate</li>
+                <li>Original Copy of Certificate of Good Moral Character or Recommendation from the School Principal</li>
+                <li>Medical Certificate</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+           <strong>College</strong>
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p><strong>Freshmen</strong></p>
+            <ul>
+                <li>Original Form 138 / SF9-SHS (Learner's Progress Report Card)</li>
+                <li>Original Form 137 / SF10-SHS (Learner's Permanent Academic Record)</li>
+                <li>PSA-issued Birth Certificate</li>
+                <li>Original Copy of Certificate of Good Moral Character or Recommendation from the School Principal</li>
+                <li>Medical Certificate</li>
+            </ul>
+            <strong>Transferees</strong>
+            <ul>
+              <li>Certificate of Transfer (Honorable Dismissal)</li>
+              <li>Official Transcript of Records</li>
+              <li>PSA-issued Birth Certificate</li>
+              <li>Original Copy of Certificate of Good Moral Character or Recommendation from the Dean/Program or Department Head</li>
+              <li>Medical Certificate</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><br>
+
+    <section class="modes-of-application">
+        <div class="card">
+        <div class="card-header">
+            Online-Pre Registration <i class="bi bi-wifi"></i>
+        </div>
+        <div class="card-body">
+            <ol>
+            <li>Visit the provided link to accomplish the online  application form<a href="https://admission.pnc.edu.ph/student/registration "> admission.pnc.edu.ph</a></li>
+            <li>Please ensure that the email address you provided during online pre-registration is active and accessible. All admission concerns will be communicated through email. You will receive an autoreply confirming your submitted application, which will serve as proof of your online pre-registration. </a>.</li>
+            <li>Online pre-registration is open until April 07, 2025</li>
+            </ol>
+        </div>
+        </div>
+        <div class="card">
+        <div class="card-header">
+            Onsite <i class="bi bi-house-door"></i>
+        </div>
+        <div class="card-body">
+            <p>Please see <a href="https://www.pnc.edu.ph/campus-safety">www.pnc.edu.ph/campus-safety</a> before visiting.</p>
+            <ol>
+            <li>Visit the PNC campus during office hours.</a></li>
+            <li>Submit the Initial requirements. The application will be accepted starting January 27, 2025 until April 07, 2025. Physical copies of the requirements should be submitted to the Admissions Department.</li>
+            <li>Only pre-registered applicants who have submitted the initial requirements within the given period will be scheduled for the assessment examination. Details regarding the schedule of the assessment examination will be discussed by the Admissions Department upon submission of the initial requirements. </li>
+            <li>Prepare the necessary admission requirements for submission on or before the start of classes.</li>
+            </ol>
+        </div>
+        </div>
+    </section>
+
+    </div>
+  
+    <br><br>
+    <section class="recent-posts">
+        <h2 style="color: white;">Announcement</h2>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+            <img src="/assets/images/1.jpg" class="d-block w-100"  alt="...">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+            </div>
+            <div class="carousel-item">
+            <img src="/assets/images/2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+            </div>
+            <div class="carousel-item">
+            <img src="/assets/images/3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+            </div>
+            <div class="carousel-item">
+            <img src="/assets/images/4.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        </div>
+    </section>
+    </strong>
+    <!--CHAT BUBBLE OF CHAT BOT IN VIEWPORT-->
+    <div id="chat-bubble-container"  style="position: fixed; right: 0;">
+        <button disabled type="button" style="background-color: #0fa13100; border: 0;" data-toggle="tooltip" data-placement="top" title="This feature is current unavailable">
+            <img src="/assets/images/pixel-speech-bubble.png" alt="" style="width: 300px;" >
+        </button>
+    </div>
+    <!--CHAT BOT IN VIEWPORT-->
+    <div id="chatbot-container"  style="position: fixed; right: 0;">
+        <button disabled type="button" style="background-color: #0fa13100; border: 0;" data-toggle="tooltip" data-placement="top" title="This feature is current unavailable">
+            <img src="/assets/images/PncChatBot.png" alt="" style="width: 150px;" >
+        </button>
+    </div>
+    <!--STORE FIXED ICON IN VIEWPORT-->
+    <div style="position: fixed; right: 0; width: px; bottom: 80%;">
+        <button disabled type="button" style="background-color: #0fa13100; border: 0;" data-toggle="tooltip" data-placement="top" title="This feature is current unavailable">
+            <h4 class="old-english-font" style="background-color: #0fa131; padding: 10px; border: 5px rgb(202, 230, 103) ; border-radius: 10px 50px; color: white;">Store</h4>
+        </button>
+    </div>
+    <footer class="text-start">
+        <div class="container">
+            <div class="row">
+                <!--QUICK LINKS PART-->
+                <div class="col-md-4 mb-2 mb-md-0">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white" style="text-decoration: none;">Home</a></li>
+                        <li><a class="text-white" style="text-decoration: none;">About Us</a></li>
+                        <li><a href="about/hymn.html" class="text-white" style="text-decoration: none;">&nbsp • Hymn</a></li>
+                        <li><a href="about/history.html" class="text-white" style="text-decoration: none;">&nbsp • History</a></li>
+                        <li><a href="programs.html" class="text-white" style="text-decoration: none;">Programs</a></li>
+                        <li><a href="programs/college-of-computing.html" class="text-white" style="text-decoration: none;">&nbsp • College Of Computing</a></li>
+                        <li><a href="#" class="text-white" style="text-decoration: none;">Admissions</a></li>
+                        <li><a href="admissions/admission-form.html" class="text-white" style="text-decoration: none;">&nbsp • Admission Form</a></li>
+                        <li><a href="admissions/requirements.html" class="text-white" style="text-decoration: none;">&nbsp • Requirements</a></li>
+                        
+                    </ul>
+                </div>
+                <!--CONTACT DETAILS PART-->
+                <div class="col-md-4 mb-2 mb-md-0">
+                    <h5>Contact Us</h5>
+                    <p>Banay-Banay, Cabuyao, Laguna</p>
+                    <p>(000) 123-4567</p>
+                    <p> info@pnc.edu.ph</p>
+                </div>
+                <!--APPLICATION FORM PART-->
+                <div class="col-md-4 mb-2 mb-md-0">
+                    <h5>Want to be a PnCian?</h5>
+                    <p>Fill out our application form!</p>
+                    <button style="font-weight: bold; background-color: yellow; padding: 10px; border-radius: 10px; color: black;">APPLY NOW!</button>
+                </div>
+            </div>
+            <hr class="my-4 bg-white">
+            <p class="mb-0 text-center"> 2024-2025 Pamantasan ng Cabuyao.</p>
+        </div>
+    </footer>
+    <!--BOOTSTRAP JS FOR ANIMATIONS AND FUNCTIONALITY-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <!--LINK FOR BOOTSTRAP CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--LINK FOR SPECIFIED CSS OF THE HTML FILE-->
+    <link rel="stylesheet" href="css/apply-form-style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- This is the close button. -->
+        <a class="btn-close" onclick="history.back()" aria-label="Close"></a>
+
+        <!-- This Section is for the Header. -->
+        <h1 class="text-center text-white bg-success py-3 d-flex align-items-center justify-content-center">
+            <img src="assets/images/Pnc Logo.png" alt="Logo">
+            PnC Application Form
+        </h1>
+        
+        <!-- This Section is for the Note. -->
+        <ul class="note-heading">
+            <h1>Note:</h1>
+            <li>Please fill in the form below to apply to the university.</li>
+            <li>Make sure to double-check the spelling of everything you input.</li>
+        </ul>
+
+        <!-- This Section is for First Name, Last Name, Middle Name, Suffix Name. -->
+        <form>
+            <div class="row mb-3">
+                <div class="col">
+                    <label for="firstName" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="Your First name" aria-label="First name" title="Your First Name">
+                </div>
+                <div class="col">
+                    <label for="lastName" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="Your Last name" aria-label="Last name" title="Your Last Name">
+                </div>
+                <div class="col">
+                    <label for="middleName" class="form-label">Middle Name</label>
+                    <input type="text" class="form-control" id="middleName" placeholder="Your Middle name" aria-label="Middle name" title="Your Middle Name">
+                </div>
+                <div class="col">
+                    <label for="suffixName" class="form-label">Suffix Name</label>
+                    <input type="text" class="form-control" id="suffixName" placeholder="Your Suffix" aria-label="Suffix" title="Your Suffix">
+                </div>
+            </div>
+
+            <!-- This Section is for Birthdate, Email Address, Facebook Account. -->
+            <div class="row mb-3">
+                <div class="col">
+                    <label for="birthdate" class="form-label">Birthdate</label>
+                    <input type="date" class="form-control" id="birthdate" name="birthdate" aria-label="Your Birthdate">
+                </div>
+                <div class="col">
+                    <label for="emailAddress" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="emailAddress" placeholder="Your Email Address" aria-label="Email Address" title="Your Email Address">
+                </div>
+                <div class="col">
+                    <label for="facebookAccount" class="form-label">Facebook Account</label>
+                    <input type="text" class="form-control" id="facebookAccount" placeholder="Your Facebook Account" aria-label="Facebook Account" title="Your Facebook Account">
+                </div>
+            </div>
+
+            <!-- This Section is for Country Code, Mobile Number, Tel. Number. -->
+            <div class="row mb-3">
+                <div class="col">
+                    <label for="countryCode" class="form-label">Country Code</label>
+                    <select class="form-select" id="countryCode" aria-label="Country Code" title="Country Code">
+                        <option value="+63">PH +63 (Philippines)</option>
+                        <option value="+1">US +1 (United States)</option>
+                        <option value="+44">GB +44 (United Kingdom)</option>
+                        <option value="+91">IN +91 (India)</option>
+                        <option value="+61">AU +61 (Australia)</option>              
+                        <option value="+81">JP +81 (Japan)</option>
+                        <option value="+49">DE +49 (Germany)</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <label for="mobileNumber" class="form-label">Mobile Number</label>
+                    <input type="text" class="form-control" id="mobileNumber" placeholder="ex.91234567890" aria-label="Mobile Number" title="Your Mobile Number">
+                </div>
+                <div class="col">
+                    <label for="telNumber" class="form-label">Tel. Number</label>
+                    <input type="text" class="form-control" id="telNumber" placeholder="Your Tel. Number (Optional)" aria-label="Tel. Number" title="Your Tel. Number">
+                </div>
+            </div>
+
+            <!-- This Section is for Citizenship, Desired Program, Year Level, Semester.-->
+            <div class="row mb-3">
+                <div class="col">
+                    <label for="citizenship" class="form-label">Citizenship</label>
+                    <select class="form-select" id="citizenship" aria-label="Your Citizenship" title="Your Citizenship">
+                        <option selected>Your Citizenship</option>
+                        <option value="Filipino">Filipino</option>
+                        <option value="American">American</option>
+                        <option value="British">British</option>
+                        <option value="Indian">Indian</option>
+                        <option value="Australian">Australian</option>
+                        <option value="Japanese">Japanese</option>
+                        <option value="German">German</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <label for="course" class="form-label">Desired Program</label>
+                    <select class="form-select" id="course" aria-label="Choose Your Course" title="Choose Your Course">
+                        <option selected>Choose Your Course</option>
+                        <optgroup label="College of Arts and Sciences"></optgroup>
+                            <option value="BSPSY">BS in Psychology</option>
+                        </optgroup>
+                        <optgroup label="College of Business Administration and Accountancy">
+                            <option value="BSA">BS in Accountancy</option>
+                            <option value="BSBA">BS in Business Administration</option>
+                        </optgroup>
+                        <optgroup label="College of Computer Studies">
+                            <option value="BSIT">BS in Information Technology</option>
+                            <option value="BSIS">BS in Information Systems</option>
+                            <option value="BSCS">BS in Computer Science</option>
+                        </optgroup>
+                        <optgroup label="College of Education">
+                            <option value="BEED">Bachelor in Elementary Education</option>
+                            <option value="BSED">Bachelor in Secondary Education</option>
+                        </optgroup>
+                        <optgroup label="College of Engineering">
+                            <option value="BSCE">BS in Computer Engineering</option>
+                            <option value="BSEE">BS in Electronic and Communicating Engineering</option>
+                            <option value="BSME">BS in Industrial Engineering</option>
+                        </optgroup>
+                        <optgroup label="College of Nursing">
+                            <option value="BSN">BS in Nursing</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div class="col">
+                    <label for="yearLevel" class="form-label">Year Level</label>
+                    <select class="form-select" id="yearLevel" aria-label="Year Level" title="Year Level">
+                        <option selected>Choose Year Level</option>
+                        <option value="1st Year">1st Year</option>
+                        <option value="2nd Year">2nd Year</option>
+                        <option value="3rd Year">3rd Year</option>
+                        <option value="4th Year">4th Year</option>
+                        <option value="5th Year">5th Year</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <label for="semester" class="form-label">Semester</label>
+                    <select class="form-select" id="semester" aria-label="Semester" title="Semester">
+                        <option selected>Choose Semester</option>
+                        <option value="1st Semester">1st Semester</option>
+                        <option value="2nd Semester">2nd Semester</option>
+                        <option value="Summer">Summer</option>
+                    </select>
+                </div>
+            </div>
+            <!-- This section is for Last School Year Attended, School Address, School Type.-->
+            <div class="row mb-3">
+                <div class="col">
+                    <label for="lastSchoolYear" class="form-label">Last School Year Attended</label>
+                    <input type="text" class="form-control" id="lastSchoolYear" placeholder="Your Last School Attended" aria-label="Last School Attended" title="Your Last School Attended">
+                </div>
+                <div class="col">
+                    <label for="schoolAddress" class="form-label">School Address</label>
+                    <input type="text" class="form-control" id="schoolAddress" placeholder="Your School Address" aria-label="School Address" title="Your School Address">
+                </div>
+                <div class="col">
+                    <label for="schoolType" class="form-label">School Type</label>
+                    <select class="form-select" id="schoolType" aria-label="School Type" title="School Type">
+                        <option selected>School Type</option>
+                        <option value="Public">Public</option>
+                        <option value="Private">Private</option>
+                        <option value="International">International</option>
+                        <option value="Others">Others</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- This Section is for Contact, Person of Emergency, Religion, Gender, Blood type.-->
+            <div class="row mb-3">
+                <div class="col">
+                    <label for="emergencyContact" class="form-label">Contact# In Case of Emergency</label>
+                    <input type="text" class="form-control" id="emergencyContact" placeholder="63+ " aria-label="Emergency Contact" title="Emergency Contact">
+                </div>
+                <div class="col">
+                    <label for="emergencyPerson" class="form-label">Person of Emergency</label>
+                    <input type="text" class="form-control" id="emergencyPerson" placeholder="Name of a Person" aria-label="Emergency Person" title="Emergency Person">
+                </div>
+                <div class="col">
+                    <label for="religion" class="form-label">Religion</label>
+                    <input type="text" class="form-control" id="religion" placeholder="Your Religion" aria-label="Religion" title="Your Religion">
+                </div>
+                <div class="col">
+                    <label for="gender" class="form-label">Gender</label>
+                    <select class="form-select" id="gender" aria-label="Gender" title="Your Gender">
+                        <option selected>Choose Your Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <label for="bloodType" class="form-label">Blood Type</label>
+                    <select class="form-select" id="bloodType" aria-label="Blood Type" title="Your Blood Type">
+                        <option selected>Your Blood Type</option>
+                        <option value="A+">A+</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B-">B-</option>
+                        <option value="AB+">AB+</option>
+                        <option value="AB-">AB-</option>
+                        <option value="O+">O+</option>
+                        <option value="O-">O-</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- This Section is for Button trigger modal -->
+            <button type="button" class="btn btn-success custom-btn" 
+                    data-bs-toggle="modal" 
+                    data-bs-target="#exampleModal"
+                    title="Submit your Application Form">
+                Submit
+            </button>
+
+            <!-- The Modal -->
+            <div class="modal fade custom-modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Submit</h5>
+                        </div>
+                        <div class="modal-body">
+                            Are you sure you want to submit your application form?
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

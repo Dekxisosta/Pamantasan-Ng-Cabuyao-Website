@@ -1,0 +1,88 @@
+.container {
+    max-width: 960px;
+  }
+  
+  .img-responsive {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .admissions, .requirements {
+    border: 50px solid #ffffff;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+  .hero-image {
+    background-size: cover;
+    background-position: center;
+    min-height: 350px;
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-end;
+    align-items:flex-end;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    padding-bottom: 20px;
+    padding-right: 20px;
+    background-image: url(ha.jpg);
+    border-radius: 25px;
+  }
+  
+  .hero-image img {
+      display: none;
+  }
+  
+  .hero-text {
+    font-size: 2rem;
+    font-weight: 100;
+    margin-bottom: 2rem;
+    text-align: justify;
+    align-items: flex-end;
+    text-indent: 5px;
+    color: rgb(255, 255, 255);
+  }
+  
+  .admissions-container{
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-end;
+    align-items:flex-end;
+    color: black;
+  
+  }
+  
+  .requirements {
+    border: 3px solid white; 
+    padding: 25px;
+    border-radius: 15px;
+    background-color: rgba(170, 166, 166, 0.226);
+  }
+  
+  .recent-posts{
+    border: 3px solid white;
+    padding: 25px;
+    border-radius: 15px;
+    background-color: rgba(170, 166, 166, 0.226);
+  }
+  
+  
+  .modes-of-application {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .modes-of-application .card {
+    flex: 1;
+    margin: 0 10px;
+    border-radius: 10px;
+  }
+  
+  .modes-of-application .card-header {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .modes-of-application .card-body {
+    padding: 15px;
+  }

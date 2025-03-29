@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME | PnC University of Cabuyao</title>
+    <!-- LINK BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--LINK MAIN CSS FILE-->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!--NAVIGATION BAR SECTION-->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <!--NAVIGATION BAR UNIVERSITY OF CABUYAO BANNER-->
+            <!--When clicked, it goes back to top-->
+            <a class="navbar-brand" href="#">
+                <img src="/assets/images/pnc-header-2-white.png" alt="PNC Pamantasan ng Cabuyao">
+            </a>
+            <!--NAVIGATION BAR TOGGLER - SHOWS WHEN SCREEN SIZE IS PORTRAIT-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--NAVIGATION BAR PARTS-->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <!--NAVIGATION BAR HOME PART-->
+                    <li class="nav-item">
+                        <a class="nav-link active nav-item-text" href="index.html">&nbsp&nbsp Home</a>
+                    </li>
+                    <!--NAVIGATION BAR ABOUT PART-->
+                    <li class="nav-item dropdown">
+                        <!--Dropdown Toggle for about us-->
+                        <a class="nav-link dropdown-toggle" href="category/programs.html" id="programsDropdown" role="button"
+                            data-bs-toggle="dropdown">
+                            About Us
+                        </a>
+                        <!--Dropdown for about page options enabled-->
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="category/about/hymn.html">Hymn</a></li>
+                            <li><a class="dropdown-item" href="category/about/history.html">History</a></li>
+                        </ul>
+                    </li>
+                    <!--NAVIGATION BAR PROGRAMS PART-->
+                    <li class="nav-item dropdown">
+                        <!--Dropdown Toggle for Programs-->
+                        <a class="nav-link dropdown-toggle" href="category/programs.html" id="programsDropdown" role="button"
+                            data-bs-toggle="dropdown">
+                            Programs
+                        </a>
+                        <!--Dropdown Menu for college departments-->
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="category/programs.html">All Programs</a></li>
+                            <li><a class="dropdown-item" href="category/programs/college-of-computing.html">College of Computing</a></li>
+                        </ul>
+                    </li>
+                    <!--NAVIGATION BAR ADMISSIONS PART-->
+                    <li class="nav-item dropdown">
+                        <!--Dropdown Toggle for Programs-->
+                        <a class="nav-link dropdown-toggle" href="category/programs.html" id="programsDropdown" role="button"
+                            data-bs-toggle="dropdown">
+                            Admissions
+                        </a>
+                        <!--Dropdown Menu for college departments-->
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="category/admissions.html">All about admissions</a></li>
+                            <li><a class="dropdown-item" href="category/admissions/admission-form.html">Admission Form</a></li>
+                            <li><a class="dropdown-item" href="category/admissions/requirements.html">Requirements</a></li>
+                        </ul>
+                    </li>
+                    <!--NAVIGATION BAR RESEARCH PART-->
+                    <li class="nav-item">
+                        <!--Link disabled-->
+                        <a class="nav-link disabled">Research</a>
+                    </li>
+                    <!--NAVIGATION BAR CONTACT PART-->
+                    <li class="nav-item">
+                        <!--Link disabled-->
+                        <a class="nav-link disabled">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--HERO SECTION - VISUALLY ENGAGING AREA OF THE WEBPAGE-->
+    <section class="hero-section text-center">
+        <div class="container">
+            <!--Displays PnC Logo-->
+            <img src="/assets/images/pnc Logo.png" class="hero-section-logo" alt="">
+            <!--Displays university name in Old English Five Font with stroke -->
+            <h1 id="pnc-header" class="display-3 old-english-font" style=" -webkit-text-stroke: 1px rgb(255, 255, 255);">
+                Pamantasan ng Cabuyao
+            </h1>
+            <!--Displays button for apply to PnC-->
+            <a href="apply-form.html" class="btn btn-primary btn-lg mt-3" onclick="window.location = apply-form.html" >Apply Now</a>
+        </div>
+    </section>
+    <!--CARDS FOR DIFFERENT WEBSITE SECTIONS-->
+    <section class="container mb-5" style="margin-top: 20px;">
+        <div class="row g-4">
+            <!--CARD FOR PROGRAMS-->
+            <div class="col-md-3">
+                <div class="card h-100 border-primary">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Programs</h5>
+                        <p class="card-text">Explore our academic offerings</p>
+                        <a href="category/programs.html" class="btn btn-outline-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!--CARD FOR ADMISSIONS-->
+            <div class="col-md-3">
+                <div class="card h-100 border-primary">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Admissions</h5>
+                        <p class="card-text">Start your journey with us here on PnC</p>
+                        <a href="category/admissions/admission-form.html" class="btn btn-outline-primary">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+            <!--CARD FOR RESEARCH - DISABLED-->
+            <div class="col-md-3">
+                <div class="card h-100 border-primary">
+                    <div class="card-body text-center">
+                        <!--Header for research card-->
+                        <h5 class="card-title">Research</h5>
+                        <!--Description for research card-->
+                        <p class="card-text">Discover our innovations</p>
+                        <!--Button for research disabled-->
+                        <a href="#" class="btn btn-outline-primary disabled">View Research</a>
+                    </div>
+                </div>
+            </div>
+            <!--CARD FOR EVENTS - DISABLED-->
+            <div class="col-md-3">
+                <div class="card h-100 border-primary">
+                    <div class="card-body text-center">
+                        <!--Header for events card-->
+                        <h5 class="card-title">Events</h5>
+                        <!--Description for events card-->
+                        <p class="card-text">Upcoming university events</p>
+                        <!--Button for calender disabled-->
+                        <a href="..." class="btn btn-outline-primary disabled">View Calendar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--FEATURED PROGRAMS SECTION-->
+    <section class="container mb-5">
+        <h2 class="text-center mb-4">Featured Programs</h2>
+        <div class="row g-4">
+            <!--BUSINESS ADMINISTRATION-->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="/assets/images/business administration.png"
+                        class="card-img-top" alt="Business Program">
+                    <div class="card-body">
+                        <h5 class="card-title">Business Administration</h5>
+                        <p class="card-text">Develop related skills for the global business
+                            environment.</p>
+                        <a  class="btn btn-primary disabled">Program Details</a>
+                    </div>
+                </div>
+            </div>
+            <!--COMPUTER ENGINEERING-->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="/assets/images/COE1.png" class="card-img-top"
+                        alt="Engineering Program">
+                    <div class="card-body">
+                        <h5 class="card-title">Computer Engineering</h5>
+                        <p class="card-text">Prepare for a career in hardware and software systems development.</p>
+                        <a class="btn btn-primary disabled">Program Details</a>
+                    </div>
+                </div>
+            </div>
+            <!--COLLEGE OF EDUCATION-->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="/assets/images/educ.jpg" class="card-img-top"
+                        alt="Education Program">
+                    <div class="card-body">
+                        <h5 class="card-title">College of Education</h5>
+                        <p class="card-text">Shape the future through quality teacher education programs.</p>
+                        <a class="btn btn-primary disabled">Program Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--NEWS SECTION-->
+    <section class="bg-light py-5 mb-5">
+        <div class="container">
+            <h2 class="text-center mb-4">University News</h2>
+            <div id="newsCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card">
+                            <img src="/assets/images/news1.png" class="d-block w-100"
+                                alt="News 1">
+                            <div class="card-body">
+                                <p class="card-text"><h6><b>ANNOUNCEMENT: </b></h6> <b> MARCH 18, 2025 </b> Online Synchronous Class and Work Arrangement this Tuesday</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <img src="/assets/images/news2.png" class="d-block w-100"
+                                alt="News 2">
+                            <div class="card-body">
+                                <p class="card-text"><h6><b>ANNOUNCEMENT: </b></h6> <b> MARCH 27, 2025 </b> CCS CAPADE A RETRO SOIREE NIGHT</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <img src="/assets/images/news3.png" class="d-block w-100"
+                                alt="News 3">
+                            <div class="card-body">
+                                <p class="card-text"><h6><b>ANNOUNCEMENT: </b></h6> <b> MARCH 18, 2025 </b>The Junior Philippine Institute of Accountants in Pamantasan ng Cabuyao's General Assembly</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <img src="/assets/images/news4.png" class="d-block w-100"
+                                alt="News 4">
+                            <div class="card-body">
+                                <p class="card-text"><h6><b>ANNOUNCEMENT: </b></h6> <b> MARCH 26-29, 2025 </b> Online Synchronous Class and Work Arrangement due to installations in Bagong Cabuyao Hall</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#newsCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#newsCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!--CHAT BUBBLE OF CHAT BOT IN VIEWPORT-->
+    <div id="chat-bubble-container"  style="position: fixed; right: 0;">
+        <button disabled type="button" style="background-color: #0fa13100; border: 0;" data-toggle="tooltip" data-placement="top" title="This feature is current unavailable">
+            <img src="/assets/images/pixel-speech-bubble.png" alt="" style="width: 300px;" >
+        </button>
+    </div>
+    <!--CHAT BOT IN VIEWPORT-->
+    <div id="chatbot-container"  style="position: fixed; right: 0;">
+        <button disabled type="button" style="background-color: #0fa13100; border: 0;" data-toggle="tooltip" data-placement="top" title="This feature is current unavailable">
+            <img src="/assets/images/PncChatBot.png" alt="" style="width: 150px;" >
+        </button>
+    </div>
+    <!--STORE FIXED ICON IN VIEWPORT-->
+    <div style="position: fixed; right: 0; width: px; bottom: 80%;">
+        <button disabled type="button" style="background-color: #0fa13100; border: 0;" data-toggle="tooltip" data-placement="top" title="This feature is current unavailable">
+            <h4 class="old-english-font" style="background-color: #0fa131; padding: 10px; border: 5px rgb(202, 230, 103) ; border-radius: 10px 50px; color: white;">Store</h4>
+        </button>
+    </div>
+    <footer class="text-start">
+        <div class="container">
+            <div class="row">
+                <!--QUICK LINKS PART-->
+                <div class="col-md-4 mb-2 mb-md-0">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white" style="text-decoration: none;">Home</a></li>
+                        <li><a class="text-white" style="text-decoration: none;">About Us</a></li>
+                        <li><a href="category/about/hymn.html" class="text-white" style="text-decoration: none;">&nbsp • Hymn</a></li>
+                        <li><a href="category/about/history.html" class="text-white" style="text-decoration: none;">&nbsp • History</a></li>
+                        <li><a href="category/programs.html" class="text-white" style="text-decoration: none;">Programs</a></li>
+                        <li><a href="category/programs/college-of-computing.html" class="text-white" style="text-decoration: none;">&nbsp • College Of Computing</a></li>
+                        <li><a href="category/admissions.html" class="text-white" style="text-decoration: none;">Admissions</a></li>
+                        <li><a href="category/admissions/admission-form.html" class="text-white" style="text-decoration: none;">&nbsp • Admission Form</a></li>
+                        <li><a href="category/admissions/requirements.html" class="text-white" style="text-decoration: none;">&nbsp • Requirements</a></li>
+                        
+                    </ul>
+                </div>
+                <!--CONTACT DETAILS PART-->
+                <div class="col-md-4 mb-2 mb-md-0">
+                    <h5>Contact Us</h5>
+                    <p>Banay-Banay, Cabuyao, Laguna</p>
+                    <p>(000) 123-4567</p>
+                    <p> info@pnc.edu.ph</p>
+                </div>
+                <!--APPLICATION FORM PART-->
+                <div class="col-md-4 mb-2 mb-md-0">
+                    <h5>Want to be a PnCian?</h5>
+                    <p>Fill out our application form!</p>
+                </div>
+            </div>
+            <hr class="my-4 bg-white">
+            <p class="mb-0 text-center"> 2024-2025 Pamantasan ng Cabuyao.</p>
+        </div>
+    </footer>
+    <!--BOOTSTRAP JS FOR ANIMATIONS AND FUNCTIONALITY-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+</html>
+

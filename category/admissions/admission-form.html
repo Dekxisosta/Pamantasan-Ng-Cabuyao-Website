@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Form</title>
+    <!-- LINK BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--LINK MAIN CSS FILE-->
+    <link rel="stylesheet" href="/css/style.css">
+    <!--LINK CURRENT FILE SPECIFIC CSS FILE-->
+    <link rel="stylesheet" href="/css/admission-form-style.css">   
+</head>
+<body>
+    <div style="width: 10%; margin-top: 10px ; margin-left: 10px;">
+        <button type="button" class="btn btn-primary back-button" onclick="history.back()">Go back</button>
+    </div>
+    <div class="container">
+        <img src="assets/images/pamantasan.jpg" alt="University of Cabuyao" class="header-image">
+        <h1 class="old-english-font"> University of Cabuyao <br>
+            <span style="font-family: arial;">Academic Information Management System 🔒</span>
+        </h1>
+        <div class="notes">
+            <strong>NOTES:</strong>
+            <ul>
+                <li>Fields with asterisk (<span class="required">*</span>) are required.</li>
+                <li>Put a <strong>WORKING e-mail</strong>, verification will be sent to your e-mail.</li>
+            </ul>
+        </div>
+        <form class="admission-form">
+            <h2 >📄 ADMISSION FORM</h2>
+            <div class="form-container">
+                <div class="form-group">
+                    <label for="last-name"><span class="required">*</span> Last Name</label>
+                    <input type="text" id="last-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="first-name"><span class="required">*</span> First Name</label>
+                    <input type="text" id="first-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="middle-name">Middle Name</label>
+                    <input type="text" id="middle-name">
+                </div>
+                <div class="form-group">
+                    <label for="suffix">Suffix</label>
+                    <input type="text" id="suffix">
+                </div>
+                <div class="form-group">
+                    <label for="dob"><span class="required">*</span> Date of Birth</label>
+                    <input type="date" id="dob" required>
+                </div>
+                <div class="form-group">
+                    <label for="email"><span class="required">*</span> Email Address</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="mobile"><span class="required">*</span> Mobile No.</label>
+                    <input type="tel" id="mobile" placeholder="9123456789" required>
+                </div>
+                <div class="form-group">
+                    <label for="status"><span class="required">*</span> Classified As</label>
+                    <select id="status" required>
+                        <option value="">- STATUS -</option>
+                        <option value="Married">Married</option>
+                        <option value="Single">Single</option>
+                        <option value="Widowed">Widowed</option>
+                        <option value="Separated">Separated</option>
+                        <option value="Divorced">Divorced</option>
+                    </select>
+                </div>
+            </div>
+            <button type="submit">Submit Admission Form</button>
+        </form>
+    </div>
+</body>
+</html>

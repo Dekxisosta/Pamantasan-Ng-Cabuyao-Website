@@ -1,0 +1,101 @@
+:root {
+    --primary-color: #04721e;
+    --secondary-color: #ffffff;
+}
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/images/PamantasanNgCabuyaoBannerImage.jpg');
+    background-size: cover;
+    background-position: center;
+    color: var(--secondary-color);
+    width: 100%;
+}
+.hero-section-logo{
+    margin: 20px; 
+    width: calc(50rem/4);
+}
+.navbar-brand img {
+    height: 50px;
+}
+.card-img-top {
+    height: 180px;
+    object-fit: cover;
+}
+footer {
+    background-color: #343a40;
+    color: var(--secondary-color);
+    padding: 30px 0;
+}
+.navbar {
+    background-color: var(--primary-color) !important;
+}
+.nav-item-text{
+    background-color: rgb(255, 255, 255); 
+    color: var(--primary-color) !important; 
+    border-radius: 20px 30px;
+}
+.card {
+    transition: all 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    margin-bottom: 20px;
+}
+.btn-primary:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+.btn-outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+.btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+.border-primary {
+    border-color: var(--primary-color) !important;
+}
+.text-primary {
+    color: var(--primary-color) !important;
+}
+.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+.card-header.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+@font-face {
+font-family: OldEnglishFive;
+src: url(/assets/fonts/OldEnglishFive.ttf);
+}
+.old-english-font {
+font-family: OldEnglishFive;
+}
+@keyframes movingChatbot{
+    0% {bottom: 0.4%;}
+    50% {bottom: 0%;}
+    100% {bottom: 0.4%;}
+}
+#chatbot-container{
+    animation-name: movingChatbot;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes flickeringMovingChatBubble{
+    0% {bottom:10%;
+    opacity: 100;}
+    50% {bottom:9.6%;
+        opacity: 50;}
+    100% {bottom:10%;
+        opacity: 0;}
+}
+#chat-bubble-container{
+    animation-name:flickeringMovingChatBubble;
+    animation-duration: 5s;
+    animation-iteration-count:infinite;
+}

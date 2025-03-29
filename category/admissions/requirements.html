@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Form</title>
+    <!-- LINK BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--LINK MAIN CSS FILE-->
+    <link rel="stylesheet" href="/css/style.css">
+    <!--LINK CURRENT FILE SPECIFIC CSS FILE-->
+    <link rel="stylesheet" href="/css/requirements-style.css"> 
+</head>
+<body>
+    <!--NAVIGATION BAR SECTION-->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <!--NAVIGATION BAR UNIVERSITY OF CABUYAO BANNER-->
+            <!--When clicked, it goes back to top-->
+            <a class="navbar-brand" href="#">
+                <img src="/assets/images/pnc-header-2-white.png" alt="PNC Pamantasan ng Cabuyao">
+            </a>
+            <!--NAVIGATION BAR TOGGLER - SHOWS WHEN SCREEN SIZE IS PORTRAIT-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--NAVIGATION BAR PARTS-->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <!--NAVIGATION BAR HOME PART-->
+                    <li class="nav-item">
+                        <a class="nav-link active nav-item-text" href="/index.html">&nbsp&nbsp Home</a>
+                    </li>
+                    <!--NAVIGATION BAR ABOUT PART-->
+                    <li class="nav-item dropdown">
+                        <!--Dropdown Toggle for about us-->
+                        <a class="nav-link dropdown-toggle" href="/category/programs.html" id="programsDropdown" role="button"
+                            data-bs-toggle="dropdown">
+                            About Us
+                        </a>
+                        <!--Dropdown for about page options enabled-->
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/category/about/hymn.html">Hymn</a></li>
+                            <li><a class="dropdown-item" href="/category/about/history.html">History</a></li>
+                        </ul>
+                    </li>
+                    <!--NAVIGATION BAR PROGRAMS PART-->
+                    <li class="nav-item dropdown">
+                        <!--Dropdown Toggle for Programs-->
+                        <a class="nav-link dropdown-toggle" href="/category/programs.html" id="programsDropdown" role="button"
+                            data-bs-toggle="dropdown">
+                            Programs
+                        </a>
+                        <!--Dropdown Menu for college departments-->
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/category/programs.html">All Programs</a></li>
+                            <li><a class="dropdown-item" href="/category/programs/college-of-computing.html">College of Computing</a></li>
+                        </ul>
+                    </li>
+                    <!--NAVIGATION BAR ADMISSIONS PART-->
+                    <li class="nav-item dropdown">
+                        <!--Dropdown Toggle for Programs-->
+                        <a class="nav-link dropdown-toggle" href="/category/programs.html" id="programsDropdown" role="button"
+                            data-bs-toggle="dropdown">
+                            Admissions
+                        </a>
+                        <!--Dropdown Menu for college departments-->
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/category/admissions.html">All about admissions</a></li>
+                            <li><a class="dropdown-item" href="/category/admissions/admission-form.html">Admission Form</a></li>
+                            <li><a class="dropdown-item" href="/category/admissions/requirements.html">Requirements</a></li>
+                        </ul>
+                    </li>
+                    <!--NAVIGATION BAR RESEARCH PART-->
+                    <li class="nav-item">
+                        <!--Link disabled-->
+                        <a class="nav-link disabled">Research</a>
+                    </li>
+                    <!--NAVIGATION BAR CONTACT PART-->
+                    <li class="nav-item">
+                        <!--Link disabled-->
+                        <a class="nav-link disabled">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--HERO SECTION - VISUALLY ENGAGING AREA OF THE WEBPAGE-->
+    <section class="hero-section text-center">
+        <div class="container">
+            <!--Displays PnC Logo-->
+            <img src="/assets/images/pnc Logo.png" class="hero-section-logo" alt="">
+            <!--Displays university name in Old English Five Font with stroke -->
+            <h1 id="pnc-header" class="display-3 old-english-font" style=" -webkit-text-stroke: 1px rgb(255, 255, 255);">
+                Requirements
+            </h1>
+        </div>
+    </section>
+    <!--HEADER FOR REQUIREMENTS CONTAINER-->
+    <div class="requirements-container">
+        <div class="header">
+            <div class="logo">
+                <div class="text justify-content-center d-flex align-items-center">
+                    <div class="">
+                        <h1 class="old-english-font">University of Cabuyao</h1>
+                        <h2 style="text-align:end; margin-top: 30px; margin-right: 50px;">Different Program Requirements</h2>
+                    </div>
+                    <h2>"Dangal ng Bayan" - Bringing pride and honor to the nation.</h2>
+                </div>
+            </div>
+        </div>
+        <!--ACCORDION OF REQUIREMENTS PER PROGRAM LISTED-->
+        <div class="form-container">
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                    <span>Basic Education Department (Preschool, Grade School, and Junior High School)</span>
+                    <span>+</span>
+                </div>
+                <div class="accordion-content">
+                    <ul>
+                        <li>Report Card – Original and Photocopy</li>
+                        <li>Certificate of Good Moral Character</li>
+                        <li>Birth Certificate: Original and Photocopy</li>
+                        <li>Baptismal Certificate (if Catholic): Original and Photocopy</li>
+                        <li>Letters of Certification and Recommendation</li>
+                        <li>Four (4) pieces of 2”x2” studio photo (white background)</li>
+                        <li>Elementary Diploma for Junior High School Applicants</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                    <span>Senior High School</span>
+                    <span>+</span>
+                </div>
+                <div class="accordion-content">
+                    <ul>
+                        <li>Learner’s Progress Report Card (SF9)</li>
+                        <li>Learner’s Permanent Academic Record (SF10)</li>
+                        <li>Certificate of Junior High School Completion</li>
+                        <li>Certificate of Good Moral Character</li>
+                        <li>Two (2) identical copies of 2”x2” studio photo</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                    <span>College and Dentistry Freshmen</span>
+                    <span>+</span>
+                </div>
+                <div class="accordion-content">
+                    <ul>
+                        <li>Original Grade 12 Senior High School Report Card</li>
+                        <li>Original F137 (with request letter from OLFU)</li>
+                        <li>Certificate of Good Moral Character</li>
+                        <li>Two (2) copies of 2”x2” studio photo</li>
+                        <li>Photocopy of PSA Birth Certificate</li>
+                        <li>For married female applicants: Marriage Certificate photocopy</li>
+                        <li>Photocopy of Grade 12 Diploma</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleAccordion(element) {
+            var content = element.nextElementSibling;
+            var icon = element.querySelectorAll('span')[1];
+
+            if (content.style.display === 'block') {
+                content.style.display = 'none';
+                icon.textContent = '+';
+            } else {
+                content.style.display = 'block';
+                icon.textContent = '-';
+            }
+        }
+    </script>
+    <!--CHAT BUBBLE FOR CHAT BOT-->
+    <div id="chat-bubble-container"  style="position: fixed; right: 0;">
+        <button disabled type="button" style="background-color: #0fa13100; border: 0;" data-toggle="tooltip" data-placement="top" title="This feature is current unavailable">
+            <img src="/assets/images/pixel-speech-bubble.png" alt="" style="width: 300px;" >
+        </button>
+    </div>
+    <!--CHATBOT FIXED POSITION IN VIEWPORT-->
+    <div id="chatbot-container"  style="position: fixed; right: 0;">
+        <button disabled type="button" style="background-color: #0fa13100; border: 0;" data-toggle="tooltip" data-placement="top" title="This feature is current unavailable">
+            <img src="/assets/images/PncChatBot.png" alt="" style="width: 150px;" >
+        </button>
+    </div>
+    <!--STORE FIXED POSITION IN VIEWPORT-->
+    <div style="position: fixed; right: 0; width: px; bottom: 80%;">
+        <button disabled type="button" style="background-color: #0fa13100; border: 0;" data-toggle="tooltip" data-placement="top" title="This feature is current unavailable">
+            <h4 class="old-english-font" style="background-color: #0fa131; padding: 10px; border: 5px rgb(202, 230, 103) ; border-radius: 10px 50px; color: white;">Store</h4>
+        </button>
+    </div>
+    <!--FOOTER LIST OF DETAILS-->
+    <footer class="text-start">
+        <div class="container">
+            <div class="row">
+                <!--QUICK LINKS PART-->
+                <div class="col-md-4 mb-2 mb-md-0">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="/index.html" class="text-white" style="text-decoration: none;">Home</a></li>
+                        <li><a class="text-white" style="text-decoration: none;">About Us</a></li>
+                        <li><a href="/category/about/hymn.html" class="text-white" style="text-decoration: none;">&nbsp • Hymn</a></li>
+                        <li><a href="/category/about/history.html" class="text-white" style="text-decoration: none;">&nbsp • History</a></li>
+                        <li><a href="/category/programs.html" class="text-white" style="text-decoration: none;">Programs</a></li>
+                        <li><a href="/category/programs/college-of-computing.html" class="text-white" style="text-decoration: none;">&nbsp • College Of Computing</a></li>
+                        <li><a href="/category/admissions.html" class="text-white" style="text-decoration: none;">Admissions</a></li>
+                        <li><a href="/category/admissions/admission-form.html" class="text-white" style="text-decoration: none;">&nbsp • Admission Form</a></li>
+                        <li><a href="#" class="text-white" style="text-decoration: none;">&nbsp • Requirements</a></li>
+                    </ul>
+                </div>
+                <!--CONTACT DETAILS PART-->
+                <div class="col-md-4 mb-2 mb-md-0">
+                    <h5>Contact Us</h5>
+                    <p>Banay-Banay, Cabuyao, Laguna</p>
+                    <p>(000) 123-4567</p>
+                    <p> info@pnc.edu.ph</p>
+                </div>
+                <!--APPLICATION FORM PART-->
+                <div class="col-md-4 mb-2 mb-md-0">
+                    <h5>Want to be a PnCian?</h5>
+                    <p>Fill out our application form!</p>
+                    <button style="font-weight: bold; background-color: yellow; padding: 10px; border-radius: 10px; color: black;">APPLY NOW!</button>
+                </div>
+            </div>
+            <hr class="my-4 bg-white">
+            <p class="mb-0 text-center"> 2024-2025 Pamantasan ng Cabuyao.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+</html>

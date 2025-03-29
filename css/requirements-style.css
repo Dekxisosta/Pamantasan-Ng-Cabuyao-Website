@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.requirements-container {
+    width: 80%;
+    max-width: 900px;
+    margin: 50px auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 200px;
+    padding: 20px;
+    background: linear-gradient(to right, #004d00, #006600);
+    color: white;
+    border-bottom: 5px solid #004d00;
+}
+.header.logo {
+    display: flex;
+    align-items: center;
+}
+.header.logo img {
+    height: 150px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+.header.text {
+    line-height: 1.5;
+}
+.header h1 {
+    text-align: center;
+    font-size: 36px;
+    margin: 0;
+    letter-spacing: 1.5px;
+}
+.header h2 {
+    font-size: 20px;
+    margin: 5px 0 0;
+    font-style: italic;
+    opacity: 0.9;
+}
+.form-container {
+    padding: 30px;
+}
+.accordion-item {
+    border-top: 1px solid #ccc;
+}
+.accordion-header {
+    padding: 10px;
+    cursor: pointer;
+    background: #f1f1f1;
+    display: flex;
+    justify-content: space-between;
+    transition: background 0.3s;
+}
+.accordion-header:hover {
+    background: #e0e0e0;
+}
+.accordion-content {
+    display: none;
+    padding: 10px;
+}
+.accordion-header span {
+    color: green;
+}
